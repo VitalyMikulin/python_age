@@ -15,12 +15,17 @@
 # print(type(hours))
 # print(hours + 5)
 
-name = input('Как вас зовут? ')
-age = int(input('Сколько вам лет? '))
-salary = float(input('Сколько вы зарабатываете? '))
+# name = input('Как вас зовут? ')
+# age = int(input('Сколько вам лет? '))
+# salary = float(input('Сколько вы зарабатываете? '))
 
-print('Вот, что вы ввели:')
-print('Имя:', name)
-print('Возраст:', age)
-print('Доход:', salary)
+# print('Вот, что вы ввели:')
+# print('Имя:', name)
+# print('Возраст:', age)
+# print('Доход:', salary)
+
+a = 56.0
+b = 47.0
+pay = a * b
+print('Ваша зарплата составляет', pay)
 

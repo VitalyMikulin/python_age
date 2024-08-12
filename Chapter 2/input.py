@@ -33,3 +33,18 @@
 # discount = original_price * 0.2
 # sale_price = original_price - discount
 # print('Отпускная цена составляет', sale_price)
+
+# test1 = float(input('Введите первую оценку: '))
+# test2 = float(input('Введите вторую оценку: '))
+# test3 = float(input('Введите третью оценку: '))
+# average = (test1 + test2 + test3) / 3
+# print('Средний балл составляет', average)
+
+total_seconds = float(input('Введите количество секунд: '))
+hours = total_seconds // 3600
+minutes = (total_seconds // 60) % 60
+seconds = total_seconds % 60
+print('Вот время в часах, минутах и секундах: ')
+print('Часы:', hours)
+print('Минуты:', minutes)
+print('Секунды:', seconds)

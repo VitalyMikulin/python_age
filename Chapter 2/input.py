@@ -52,9 +52,11 @@
 # fvalue = 2
 # invalue = float(fvalue)
 # print(invalue)
-var1 = 4
-var2 = 5
-var3 = 6
-result = var1 * 3 + var2 * 4 \
-+ var3 * 5
-print(result)
+
+
+# var1 = 4
+# var2 = 5
+# var3 = 6
+# result = var1 * 3 + var2 * 4 \
+# + var3 * 5
+# print(result)

@@ -40,11 +40,21 @@
 # average = (test1 + test2 + test3) / 3
 # print('Средний балл составляет', average)
 
-total_seconds = float(input('Введите количество секунд: '))
-hours = total_seconds // 3600
-minutes = (total_seconds // 60) % 60
-seconds = total_seconds % 60
-print('Вот время в часах, минутах и секундах: ')
-print('Часы:', hours)
-print('Минуты:', minutes)
-print('Секунды:', seconds)
+# total_seconds = float(input('Введите количество секунд: '))
+# hours = total_seconds // 3600
+# minutes = (total_seconds // 60) % 60
+# seconds = total_seconds % 60
+# print('Вот время в часах, минутах и секундах: ')
+# print('Часы:', hours)
+# print('Минуты:', minutes)
+# print('Секунды:', seconds)
+
+# fvalue = 2
+# invalue = float(fvalue)
+# print(invalue)
+var1 = 4
+var2 = 5
+var3 = 6
+result = var1 * 3 + var2 * 4 \
++ var3 * 5
+print(result)

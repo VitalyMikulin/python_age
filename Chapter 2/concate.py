@@ -23,5 +23,14 @@
 # monthly_payment = amount_due / 12.0
 # print(f'Ежемесячный платёж составляет {monthly_payment:.2f}')
 
-number = 1234567890.123456
-print(f'{number:,.2f}')
+# number = 1234567890.123456
+# print(f'{number:,.2f}')
+
+# number = 12345.6789
+# print(f'{number:.4e}')
+
+# number = 12345678
+# print(f'{number:,d}')
+
+number = 995456.5456
+print(f'Число равняется {number:12,.2f}')

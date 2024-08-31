@@ -32,5 +32,18 @@
 # number = 12345678
 # print(f'{number:,d}')
 
-number = 995456.5456
-print(f'Число равняется {number:12,.2f}')
+# number = 995456.5456
+# print(f'Число равняется {number:12,.2f}')
+
+# name = 'Эбби Ллойд'
+# department = 'Отдел продаж'
+# position = 'Менеджер'
+# print(f'Имя сотрудника: {name}, ' f'Отдел: {department}, ' f'Должность: {position}')
+
+# value = 655345645435
+# print(f'Значение равно {value:,d}')
+
+balance = 20
+INTEREST_RATE = 0.069
+amount = balance + INTEREST_RATE
+print(amount)

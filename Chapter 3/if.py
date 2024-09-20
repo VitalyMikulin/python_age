@@ -46,3 +46,33 @@
 #     print(name2)
 #     print(name1)
 
+# A_SCORE = 90
+# B_SCORE = 80
+# C_SCORE = 70
+# D_SCORE = 60
+# score = int(input('Введите ваш балл: '))
+
+# if score >= A_SCORE:
+#     print('Ваша оценка "A"')
+# else:
+#     if score >= B_SCORE:
+#         print('Ваша оценка "B"')
+#     else:
+#         if score >= C_SCORE:
+#             print('Ваша оценка "C"')
+#         else:
+#             if score >= D_SCORE:
+#                 print('Ваша оценка "D"')
+#             else:
+#                 print('Ваша оценка "F"')
+
+number = float(input('Введите число: '))
+
+if number == 1:
+    print('Один')
+elif number == 2:
+    print('Dva')
+elif number == 3:
+    print('Tri')
+else:
+    print('Dohrena')

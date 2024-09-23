@@ -66,13 +66,31 @@
 #             else:
 #                 print('Ваша оценка "F"')
 
-number = float(input('Введите число: '))
+# number = float(input('Введите число: '))
 
-if number == 1:
-    print('Один')
-elif number == 2:
-    print('Dva')
-elif number == 3:
-    print('Tri')
-else:
-    print('Dohrena')
+# if number == 1:
+#     print('Один')
+# elif number == 2:
+#     print('Dva')
+# elif number == 3:
+#     print('Tri')
+# else:
+#     print('Dohrena')
+
+# MIN_SALARY = 30000
+# MIN_YEARS = 2
+# salary = float(input('Ведите свой годовой доход: '))
+# years_on_job = int(input('Введите количество лет' + 
+#                          'отработанного стажа: '))
+# if salary >= MIN_SALARY or years_on_job >= MIN_YEARS:
+#     print('Ваша ссуда одобрена.')
+# else:
+#     print('Ваша ссуда не одобрена.')
+
+# speed = int(input('Введите значение скорости: '))
+# if speed <= 0 or speed >= 200:
+#     print('Скорость недопустимая')
+# else:
+#     print('Скорость допустимая')
+
+import turtle

@@ -93,4 +93,5 @@
 # else:
 #     print('Скорость допустимая')
 
-import turtle
+
+

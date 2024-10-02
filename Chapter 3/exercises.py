@@ -84,3 +84,62 @@
 #     print('зеленый')
 # else:
 #     print('вы ввели не правильные данные')
+
+# №8
+BREAD_PACK = 8
+SOUSAGE_PACK = 10
+men_count = int(input('Введите количество гостей: '))
+cakes_perman_count = int(input('Введите количество хот-догов на гостя: '))
+hot_dogs_count = men_count * cakes_perman_count
+
+if (hot_dogs_count % SOUSAGE_PACK) != 0 and (hot_dogs_count % BREAD_PACK) != 0:
+    sousage_bags = ((hot_dogs_count // SOUSAGE_PACK) + 1)
+    bread_bags = ((hot_dogs_count // BREAD_PACK) + 1)
+
+elif (hot_dogs_count % SOUSAGE_PACK) == 0 and (hot_dogs_count % BREAD_PACK) != 0:
+    sousage_bags = (hot_dogs_count // SOUSAGE_PACK)
+    bread_bags = ((hot_dogs_count // BREAD_PACK) + 1)
+
+elif (hot_dogs_count % SOUSAGE_PACK) != 0 and (hot_dogs_count % BREAD_PACK) == 0:
+    sousage_bags = ((hot_dogs_count // SOUSAGE_PACK) + 1)
+    bread_bags = (hot_dogs_count // BREAD_PACK)
+
+elif (hot_dogs_count % SOUSAGE_PACK) == 0 and (hot_dogs_count % BREAD_PACK) == 0:
+    sousage_bags = (hot_dogs_count // SOUSAGE_PACK)
+    bread_bags = (hot_dogs_count // BREAD_PACK)
+
+
+if hot_dogs_count <= BREAD_PACK:
+    print('Нужен один пакет с булками и один пакет с сосисками!')
+    print('Сосисок останется: ', SOUSAGE_PACK - hot_dogs_count)
+    print('Булок останется: ', BREAD_PACK - hot_dogs_count)
+elif hot_dogs_count > BREAD_PACK and hot_dogs_count <= SOUSAGE_PACK:
+    print('Нужно два пакета с булками и один пакет с сосисками!')
+    print('Сосисок останется: ', SOUSAGE_PACK - hot_dogs_count)
+    print('Булок останется: ', (2 * BREAD_PACK) - hot_dogs_count)
+elif hot_dogs_count == 0:
+    print('Ничего не нужно из еды!')
+elif hot_dogs_count > SOUSAGE_PACK:
+    
+    if (hot_dogs_count % SOUSAGE_PACK) == 0 and (hot_dogs_count % BREAD_PACK) == 0:
+        print('Нужно', bread_bags, 'пакета с булками и', sousage_bags, 'пакета с сосисками!')
+        print('Сосисок останется: ', hot_dogs_count % SOUSAGE_PACK)
+        print('Булок останется: ', hot_dogs_count % BREAD_PACK)
+    
+    elif (hot_dogs_count % SOUSAGE_PACK) != 0 and (hot_dogs_count % BREAD_PACK) == 0:
+        print('Нужно', bread_bags, 'пакета с булками и', sousage_bags, 'пакета с сосисками!')
+        print('Сосисок останется: ', sousage_bags * SOUSAGE_PACK - hot_dogs_count)
+        print('Булок останется: ', hot_dogs_count % BREAD_PACK)
+    
+    elif (hot_dogs_count % SOUSAGE_PACK) == 0 and (hot_dogs_count % BREAD_PACK) != 0:
+        print('Нужно', bread_bags, 'пакета с булками и', sousage_bags, 'пакета с сосисками!')
+        print('Сосисок останется: ', hot_dogs_count % SOUSAGE_PACK)
+        print('Булок останется: ', bread_bags * BREAD_PACK - hot_dogs_count)
+    
+    elif (hot_dogs_count % SOUSAGE_PACK) != 0 and (hot_dogs_count % BREAD_PACK) != 0:
+        print('Нужно', bread_bags, 'пакета с булками и', sousage_bags, 'пакета с сосисками!')
+        print('Сосисок останется: ', sousage_bags * SOUSAGE_PACK - hot_dogs_count)
+        print('Булок останется: ', bread_bags * BREAD_PACK - hot_dogs_count)
+
+else:
+    print('Вы ввели некорректные данные')

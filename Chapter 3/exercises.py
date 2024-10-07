@@ -188,4 +188,44 @@
 #         print('Увы! Ваша сумма монет не достигла одного рубля!')
 #     elif summ > 100:
 #         print('Увы! Ваша сумма монет превысила один рубль!')
-    
+
+# # № 12
+# COST_PER_PACKET = 99
+# packet_number = int(input('Введите количество купленных пакетов: '))
+# if packet_number < 0:
+#     print('Введите положительное число')
+#     exit()
+# elif packet_number >= 0 and packet_number < 10:
+#     summ = packet_number * COST_PER_PACKET
+#     print('Ваша сумма скидки = 0')
+#     print(f'Ваша сумма к полате с учётом скидки: {summ}')
+
+# elif packet_number >= 10 and packet_number <= 19:
+#     summ = packet_number * COST_PER_PACKET
+#     off_cost = summ * 0.1
+#     customer_summ = summ - off_cost
+#     print(f'Ваша сумма скидки = {off_cost:.2f}')
+#     print(f'Ваша сумма к полате с учётом скидки: {customer_summ:.2f}')
+
+# elif packet_number >= 20 and packet_number <= 49:
+#     summ = packet_number * COST_PER_PACKET
+#     off_cost = summ * 0.2
+#     customer_summ = summ - off_cost
+#     print(f'Ваша сумма скидки = {off_cost:.2f}')
+#     print(f'Ваша сумма к полате с учётом скидки: {customer_summ:.2f}')
+
+# elif packet_number >= 50 and packet_number <= 99:
+#     summ = packet_number * COST_PER_PACKET
+#     off_cost = summ * 0.3
+#     customer_summ = summ - off_cost
+#     print(f'Ваша сумма скидки = {off_cost:.2f}')
+#     print(f'Ваша сумма к полате с учётом скидки: {customer_summ:.2f}')
+
+# elif packet_number >= 100:
+#     summ = packet_number * COST_PER_PACKET
+#     off_cost = summ * 0.4
+#     customer_summ = summ - off_cost
+#     print(f'Ваша сумма скидки = {off_cost:.2f}')
+#     print(f'Ваша сумма к полате с учётом скидки: {customer_summ:.2f}')
+
+# №15

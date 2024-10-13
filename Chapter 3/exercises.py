@@ -229,3 +229,24 @@
 #     print(f'Ваша сумма к полате с учётом скидки: {customer_summ:.2f}')
 
 # №15
+# MINUTE = 60
+# HOUR = 3600
+# DAY = 86400
+# seconds = int(input('Введите количество секунд: '))
+# if seconds < MINUTE:
+#     print('Это меньше минуты, тут нечего считать')
+# elif seconds >= MINUTE and seconds < HOUR:
+#     minute_only = seconds // MINUTE
+#     seconds_only = seconds % MINUTE
+#     print(f'{seconds} секунд - это {minute_only} минут и {seconds_only} секунд')
+# elif seconds >= HOUR and seconds < DAY:
+#     hours_only = seconds // HOUR
+#     minute_only = (seconds % HOUR) // MINUTE
+#     seconds_only = seconds % MINUTE
+#     print(f'{seconds} секунд - это {hours_only} часов, {minute_only} минут и {seconds_only} секунд')
+# elif seconds >= DAY:
+#     day_only = seconds // DAY
+#     hours_only = (seconds % DAY) // HOUR
+#     minute_only = (seconds % HOUR) // MINUTE
+#     seconds_only = seconds % MINUTE
+#     print(f'{seconds} секунд - это {day_only} дней, {hours_only} часов, {minute_only} минут и {seconds_only} секунд')

@@ -250,3 +250,35 @@
 #     minute_only = (seconds % HOUR) // MINUTE
 #     seconds_only = seconds % MINUTE
 #     print(f'{seconds} секунд - это {day_only} дней, {hours_only} часов, {minute_only} минут и {seconds_only} секунд')
+
+# №16
+
+# year = int(input('Введите год: '))
+# if year % 100 == 0 and year % 400 == 0:
+#     print('Это високосный год!')
+# elif year % 100 != 0 and year % 4 == 0:
+#     print('Это високосный год!')
+# else:
+#     print('Это не високосный год')
+
+# print('Перезагрузите компьютер и попробуйте подключится')
+# answer = input('Вы исправили проблему? \n')
+# if answer == 'да':
+#     exit()
+# else:
+#     print('Перезагрузите маршрутизатор и попробуйте подключится')
+#     answer = input('Вы исправили проблему? \n')
+#     if answer == 'да':
+#         exit()
+#     else:
+#         print('Убедитесь, что кабели между маршрутизатором и модемом прочно соединены')
+#         answer = input('Вы исправили проблему? \n')
+#         if answer == 'да':
+#             exit()
+#         else:
+#             print('Переместите маршрутизатор на новое место')
+#             answer = input('Вы исправили проблему? \n')
+#             if answer == 'да':
+#                 exit()
+#             else:
+#                 print('Возьмите новый маршрутизатор')

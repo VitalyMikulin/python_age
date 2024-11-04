@@ -58,3 +58,27 @@
 #     mph = kph * CONVERSATION_FACTOR
 #     print(f'{kph}\t{mph:.1f}')
 
+# print('Эта программа выводит список чисел, '
+#       'начиная с 1 и их квадраты')
+# end = int(input('введите крайнее число диапазона: '))
+# print()
+# print('Число\tКвадрат числа')
+# print('-----------------------')
+# for number in range(1, end + 1):
+#     square = number**2
+#     print(f'{number}\t{square}')
+
+
+# print('Эта программа выводит список чисел, '
+#       'и их квадраты')
+# start = int(input('Введите первое число диапазона: '))
+# end = int(input('Введите крайнее число диапазона: '))
+# print()
+# print('Число\tКвадрат числа')
+# print('-----------------------')
+# for number in range(start, end + 1):
+#     square = number**2
+#     print(f'{number}\t{square}')
+
+for num in range(10, 5, -1):
+    print(num)

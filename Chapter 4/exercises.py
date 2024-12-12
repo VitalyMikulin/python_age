@@ -84,3 +84,92 @@
 #       f'Количество месяцев составляет: {years * 12}\n'
 #       f'Общее количество осадков за период составляет: {total_rain}\n'
 #       f'Среднее количество осадков в месяц за весь период составляет: {total_rain / (years * 12)}')
+
+#Ex6
+
+# print('Celcium\t\tFarengheit')
+# print('--------------------------')
+
+# for cel in range(21):
+#     far = ((9 / 5) * cel) + 32
+#     print(f'{cel}\t\t{far:.1f}')
+
+#Ex7
+
+# days = int(input('Введите количество отработанных дней: '))
+# print('День\tЗарплата')
+# print('-------------------')
+# print('1\t1')
+# salary = 1
+# for day in range(days - 1):
+#     salary *= 2
+#     print(f'{day + 2}\t{salary}')
+# print(f'Итоговая зарплата в рублях составит {(salary / 100)} рублей')
+
+#Ex8
+
+# total = 0.0
+# digit = int(input('Введите число для подсчёта суммы, либо отрицательное для завершения: '))
+# while digit >= 0:
+#     total += digit
+#     digit = int(input('Введите следующее число для подсчёта суммы, либо отрицательное для завершения: '))
+# print(f'Сумма всех введённых чисел составляет: {total}')
+
+#Ex9
+# level = 0.0
+# print('Год\tУровень, мм')
+# print('--------------------')
+# for n in range(1, 26):
+#     level += 1.6
+#     print(f'{n}\t{level:.2f}')
+
+#Ex10
+# cost_a_year = 290000
+# print('Год\tЦена')
+# print('----------------')
+# print('1\t290000')
+# for n in range(2, 6):
+#     cost_a_year = (0.03 * cost_a_year) + cost_a_year
+#     print(f'{n}\t{cost_a_year:.2f}')
+
+#Ex11
+# weight = float(input('Введите ваш вес: '))
+# print('Месяц\tВес')
+# print('----------------')
+# for n in range(1, 6):
+#     weight -= 1.5 
+#     print(f'{n}\t{weight:.2f}')
+
+#Ex12
+# weight = int(input('Введите число для вычисления факториала: '))
+# for n in range(1, weight):
+#     weight *= n
+# print(weight)
+
+#Ex13
+# start_population = int(input('Введите стартовое количество популяции: '))
+# grow_percent = float(input('Введите среднесуточный прирост в процентах: '))
+# days_count = int(input('Введите количество дней: '))
+# print('День\tПопуляция')
+# print('-------------------')
+# total_population = (start_population * grow_percent) + start_population
+# print(f'1\t{total_population}')
+
+# for n in range(2, days_count + 1):
+#     total_population = (total_population * grow_percent) + total_population
+#     print(f'{n}\t{total_population:.2f}')
+
+#Ex14
+
+# for r in range(6, 0, -1):
+#     for c in range(r):
+#         print('*', end='  ')
+#     print()
+
+# Ex15
+
+# for r in range(6):
+#     print('#', end=' ')
+#     for c in range(r):
+#         print('', end=' ')
+#     print('#')

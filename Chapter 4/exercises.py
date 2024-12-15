@@ -173,3 +173,38 @@
 #     for c in range(r):
 #         print('', end=' ')
 #     print('#')
+
+# Ex16
+
+# import turtle
+
+# NUM_SQUARES = 50
+# OFFSET = 10
+# ANIMATION_SPEED = 100
+# x = 1000
+# y = -500
+
+# turtle.speed(ANIMATION_SPEED)
+# turtle.hideturtle()
+
+# side_lengh = 1000.0
+
+
+# for r in range(NUM_SQUARES):
+#     side_lengh -= (2 * OFFSET)
+#     x -= OFFSET
+#     y += OFFSET
+#     turtle.penup()
+#     turtle.goto(x, y)
+#     turtle.pendown()
+#     if (r % 2) == 0:
+#         turtle.fillcolor('red')
+#     else:
+#         turtle.fillcolor('green')
+#     turtle.begin_fill()
+
+#     for n in range(4):
+#             turtle.left(90)
+#             turtle.forward(side_lengh)
+
+#     turtle.end_fill()

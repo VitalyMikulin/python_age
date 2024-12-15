@@ -176,7 +176,7 @@
 
 # Ex16
 
-# import turtle
+import turtle
 
 # NUM_SQUARES = 50
 # OFFSET = 10
@@ -208,3 +208,88 @@
 #             turtle.forward(side_lengh)
 
 #     turtle.end_fill()
+
+#Ex17
+
+# START_X = -200
+# START_Y = -100
+# NUM_LINES = 8
+# LINE_LENGTH = 400
+# ANGLE = 135
+# ANIMATION_SPEED = 15
+
+# turtle.penup()
+# turtle.goto(START_X, START_Y)
+# turtle.pendown()
+
+
+
+# for x in range(NUM_LINES):
+#     turtle.pencolor('green')
+#     turtle.forward(LINE_LENGTH)
+#     turtle.left(ANGLE)
+    
+# turtle.done()
+
+#Ex18
+
+# NUM_SQUARES = 50
+# OFFSET = 10
+# ANIMATION_SPEED = 5
+
+# turtle.speed(ANIMATION_SPEED)
+# turtle.hideturtle()
+# turtle.left(90)
+# side_lengh = 0
+
+
+# for r in range(NUM_SQUARES):
+#     side_lengh += 5
+
+#     for n in range(2):
+#             turtle.forward(side_lengh)
+#             turtle.left(90)
+#             turtle.forward(2 * side_lengh)
+
+#Ex19
+
+
+
+# turtle.hideturtle()
+
+# side_lengh = 1000.0
+
+
+# for r in range(NUM_SQUARES):
+#     side_lengh -= (2 * OFFSET)
+#     x -= OFFSET
+#     y += OFFSET
+#     turtle.penup()
+#     turtle.goto(x, y)
+#     turtle.pendown()
+#     if (r % 2) == 0:
+#         turtle.fillcolor('red')
+#     else:
+#         turtle.fillcolor('green')
+#     turtle.begin_fill()
+
+#     for n in range(4):
+#             turtle.left(90)
+#             turtle.forward(side_lengh)
+
+# turtle.hideturtle()
+# turtle.penup()
+# turtle.goto(-100, -50)
+# turtle.pendown()
+# turtle.left(90)
+# turtle.speed(5)
+
+# for x in range(8):
+#     turtle.forward(100)
+#     turtle.right(45)
+
+# turtle.penup()
+# turtle.goto(7, 0)
+# turtle.pendown()
+# turtle.write('STOP')
+# turtle.done()

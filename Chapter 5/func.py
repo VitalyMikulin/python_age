@@ -89,14 +89,31 @@ import random
 
 # random.randint(1, 10)
 
-MIN = 1
-MAX = 6
+# MIN = 1
+# MAX = 6
 
-def main():
-    again = 'y'
+# def main():
+#     again = 'y'
 
-    while again == 'y' or again == 'Y':
-        print('Выпали следующие кубики: ')
-        print(random.randint(MIN, MAX), random.randint(MIN, MAX))
-        again = input('Сделать еще один бросок (y/n)?: ')
-main()
+#     while again == 'y' or again == 'Y':
+#         print('Выпали следующие кубики: ')
+#         print(random.randint(MIN, MAX), random.randint(MIN, MAX))
+#         again = input('Сделать еще один бросок (y/n)?: ')
+# main()
+
+# HEADS = 1
+# TAILS = 2
+# TOSSES = 10
+
+# def main():
+#     for toss in range(TOSSES):
+#         if random.randint(HEADS, TAILS) == HEADS:
+#             print('Орёл')
+#         else:
+#             print('Решка')
+
+# main()
+random.seed(10)
+a = random.randint(1, 100)
+b = random.randint(1, 100)
+print(a, b)

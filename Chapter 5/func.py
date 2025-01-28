@@ -113,7 +113,39 @@ import random
 #             print('Решка')
 
 # main()
-random.seed(10)
-a = random.randint(1, 100)
-b = random.randint(1, 100)
-print(a, b)
+# random.seed(10)
+# a = random.randint(1, 100)
+# b = random.randint(1, 100)
+# print(a, b)
+
+# def main():
+#     first_age = int(input('Введите свой возраст: '))
+#     second_age = int(input('Введите возраст своего лучшего друга: '))
+
+#     total = sum(first_age, second_age)
+#     print(f'Вместе вам {total} лет.')
+
+# def sum(num1, num2):
+#     result = num1 + num2
+#     return result
+
+# main()
+
+# DISCOUNT_PERCENTAGE = 0.20
+
+# def main():
+#     reg_price = get_regular_price()
+
+#     sale_price = reg_price - discount(reg_price)
+
+#     print(f'Отпускная цена составляет {sale_price:,.2f}')
+
+# def get_regular_price():
+#     price = float(input('Введите обычную цену товара: '))
+#     return price
+
+# def discount(price):
+#     return price * DISCOUNT_PERCENTAGE
+
+# main()
+

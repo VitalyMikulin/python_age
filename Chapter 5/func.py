@@ -141,11 +141,37 @@ import random
 #     print(f'Отпускная цена составляет {sale_price:,.2f}')
 
 # def get_regular_price():
-#     price = float(input('Введите обычную цену товара: '))
+#     price = 40
 #     return price
 
 # def discount(price):
 #     return price * DISCOUNT_PERCENTAGE
 
 # main()
+
+# def is_even(number):
+#     if (number % 2) == 0:
+#         status = True
+#     else:
+#         status = False
+#     return status
+
+# number = int(input('Введите число: '))
+# if is_even(number):
+#     print('Это чётное число')
+# else:
+#     print('Это нечётное число')
+
+
+
+
+# fama, imechko = get_name()
+
+# def get_name():
+#     fam = 20
+#     imya = 30
+#     return fam, imya
+
+# print(fama, imechko)
+
 

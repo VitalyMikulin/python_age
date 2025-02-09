@@ -251,7 +251,7 @@ import turtle
 #             turtle.left(90)
 #             turtle.forward(2 * side_lengh)
 
-#Ex19
+# #Ex19
 
 
 

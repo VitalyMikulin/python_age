@@ -175,48 +175,117 @@ import random
 # print(fama, imechko)
 
 
-import circle
-import rectangle
+# import circle
+# import rectangle
 
-AREA_CIRCLE_CHOICE = 1
-CIRCUMFERENCE_CHOICE = 2
-AREA_RECTANGLE_CHOICE = 3
-PERIMETER_RECTANGLE_CHOICE = 4
-QUIT_CHOICE = 5
+# AREA_CIRCLE_CHOICE = 1
+# CIRCUMFERENCE_CHOICE = 2
+# AREA_RECTANGLE_CHOICE = 3
+# PERIMETER_RECTANGLE_CHOICE = 4
+# QUIT_CHOICE = 5
 
-def main():
-    choice = 0
-    while choice != QUIT_CHOICE:
-        display_menu()
+# def main():
+#     choice = 0
+#     while choice != QUIT_CHOICE:
+#         display_menu()
 
-        choice = int(input('Выберите вариант: '))
+#         choice = int(input('Выберите вариант: '))
 
-        if choice == AREA_CIRCLE_CHOICE:
-            radius = float(input('Введите радиус: '))
-            print('Площадь курга равна', circle.area(radius))
-        elif choice == CIRCUMFERENCE_CHOICE:
-            radius = float(input('Введите радиус: '))
-            print('Длина окружности равна ',
-                  circle.circumference(radius))
-        elif choice == AREA_RECTANGLE_CHOICE:
-            width = float(input('Введите ширину: '))
-            length = float(input('Введите длину: '))
-            print('Площадь равна ', rectangle.area(width, length))
-        elif choice == PERIMETER_RECTANGLE_CHOICE:
-            width = float(input('Введите ширину: '))
-            length = float(input('Введите длину: '))
-            print('Периметр равен ', rectangle.perimeter(width, length))
-        elif choice == QUIT_CHOICE:
-            print('Выходим из программы...')
-        else:
-            print('Ошибка: недопустимый выбор.')
+#         if choice == AREA_CIRCLE_CHOICE:
+#             radius = float(input('Введите радиус: '))
+#             print('Площадь курга равна', circle.area(radius))
+#         elif choice == CIRCUMFERENCE_CHOICE:
+#             radius = float(input('Введите радиус: '))
+#             print('Длина окружности равна ',
+#                   circle.circumference(radius))
+#         elif choice == AREA_RECTANGLE_CHOICE:
+#             width = float(input('Введите ширину: '))
+#             length = float(input('Введите длину: '))
+#             print('Площадь равна ', rectangle.area(width, length))
+#         elif choice == PERIMETER_RECTANGLE_CHOICE:
+#             width = float(input('Введите ширину: '))
+#             length = float(input('Введите длину: '))
+#             print('Периметр равен ', rectangle.perimeter(width, length))
+#         elif choice == QUIT_CHOICE:
+#             print('Выходим из программы...')
+#         else:
+#             print('Ошибка: недопустимый выбор.')
 
-def display_menu():
-    print('МЕНЮ')
-    print('1. Площадь круга')
-    print('2. Длина окружности')
-    print('3. Площадь прямоугольника')
-    print('4. Периметр прямоугольника')
-    print('5. Выход')
+# def display_menu():
+#     print('МЕНЮ')
+#     print('1. Площадь круга')
+#     print('2. Длина окружности')
+#     print('3. Площадь прямоугольника')
+#     print('4. Периметр прямоугольника')
+#     print('5. Выход')
 
-main()
+# main()
+
+import turtle
+
+# Квадрат
+# def main():
+#     turtle.hideturtle()
+#     square(100, 0, 50, 'red')
+#     square(-150, -100, 200, 'blue')
+#     square(-200, 150, 75, 'green')
+#     turtle.done()
+
+# def square(x, y, width, color):
+#     turtle.penup()
+#     turtle.goto(x, y)
+#     turtle.fillcolor(color)
+#     turtle.pendown()
+#     turtle.begin_fill()
+#     for count in range(4):
+#         turtle.forward(width)
+#         turtle.left(90)
+#     turtle.end_fill()
+
+
+# main()
+
+# Круг
+
+# def main():
+#     turtle.hideturtle()
+#     circle(0, 0, 100, 'red')
+#     circle(-150, -75, 50, 'blue')
+#     circle(-200, 150, 75, 'green')
+#     turtle.done()
+
+# def circle(x, y, radius, color):
+#     turtle.penup()
+#     turtle.goto(x, y)
+#     turtle.fillcolor(color)
+#     turtle.pendown()
+#     turtle.begin_fill()
+#     turtle.circle(radius)
+#     turtle.end_fill()
+
+# main()
+
+# Линия
+
+# TOP_X = 0
+# TOP_Y = 100
+# BASE_LEFT_X = -100
+# BASE_LEFT_Y = -100
+# BASE_RIGHT_X = 100
+# BASE_RIGHT_Y = -100
+
+# def main():
+#     turtle.hideturtle()
+#     line(TOP_X, TOP_Y, BASE_LEFT_X, BASE_LEFT_Y, 'red')
+#     line(TOP_X, TOP_Y, BASE_RIGHT_X, BASE_RIGHT_Y, 'blue')
+#     line(BASE_LEFT_X, BASE_LEFT_Y, BASE_RIGHT_X, BASE_RIGHT_Y, 'green')
+#     turtle.done()
+
+# def line(startX, startY, endX, endY, color):
+#     turtle.penup()
+#     turtle.goto(startX, startY)
+#     turtle.pendown()
+#     turtle.pencolor(color)
+#     turtle.goto(endX, endY)
+
+# main()

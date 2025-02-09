@@ -186,7 +186,6 @@ QUIT_CHOICE = 5
 
 def main():
     choice = 0
-
     while choice != QUIT_CHOICE:
         display_menu()
 

@@ -56,3 +56,44 @@
 #     return result
 
 # main()
+
+#Ex4
+
+# def main():
+#     credit = float(input('За кредит в месяц: '))
+#     insure = float(input('За страховку в месяц: '))
+#     fuel = float(input('За бензин в месяц: '))
+#     motor_oil = float(input('За моторное масло: '))
+#     tyres = float(input('За шины: '))
+#     service = float(input('Сервис: '))
+
+#     month_summ = total_month(credit, insure, fuel, motor_oil, tyres, service)
+#     year_summ = 12 * month_summ 
+#     print(f'Все расходы на авто в месяц составляют: {month_summ:.2f}')
+#     print(f'Все расходы в год составляют: {year_summ:.2f}')
+
+# def total_month(credit, insure, fuel, motor_oil, tyres, service):
+#     result = credit + insure + fuel + motor_oil + tyres + service
+#     return result
+
+# main()
+
+#Ex5
+
+# def main():
+#     real_cost = float(input('Введите стоимость земли: '))
+#     tax_cost_sum = tax_cost(real_cost)
+#     real_tax_sum = real_tax(tax_cost_sum)
+
+#     print(f'Облагаемая налогом сумма составляет: {tax_cost_sum:.2f}')
+#     print(f'Итоговый налог составляет: {real_tax_sum:.2f}')
+
+# def tax_cost(real_cost):
+#     result = real_cost * 0.6
+#     return result
+
+# def real_tax(tax_cost_sum):
+#     result = (tax_cost_sum / 100) * 0.72
+#     return result
+
+# main()

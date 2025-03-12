@@ -97,3 +97,54 @@
 #     return result
 
 # main()
+
+#Ex6
+
+# def main():
+#     zhiri = float(input('Введите количество грамм съеденных жиров: '))
+#     uglevodi = float(input('Введите количество грамм съеденных углеводов: '))
+
+#     cals_zhir = calzhir(zhiri)
+#     cals_uglev = caluglev(uglevodi)
+
+#     print(f'Количество полученных калорий от жиров составляет: {cals_zhir:.2f}')
+#     print(f'Количество полученных калорий от углеводов составляет: {cals_uglev:.2f}')
+
+# def calzhir(zhiri):
+#     result = zhiri * 9
+#     return result
+
+# def caluglev(uglevodi):
+#     result = uglevodi * 4
+#     return result
+
+# main()
+
+#Ex7
+
+# def main():
+#     class_a = int(input('Количество проданных билетов класса А: '))
+#     class_b = int(input('Количество проданных билетов класса Б: '))
+#     class_c = int(input('Количество проданных билетов класса Б: '))
+
+#     sum_a = calc_a(class_a)
+#     sum_b = calc_b(class_b)
+#     sum_c = calc_c(class_c)
+
+#     total = sum_a + sum_b + sum_c
+
+#     print(f'Общая сумма дохода состаляет: {total}')
+
+# def calc_a(class_a):
+#     result = class_a * 20
+#     return result
+    
+# def calc_b(class_b):
+#     result = class_b * 15
+#     return result
+    
+# def calc_c(class_c):
+#     result = class_c * 10
+#     return result
+
+# main()

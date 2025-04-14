@@ -122,29 +122,29 @@
 
 #Ex7
 
-# def main():
-#     class_a = int(input('Количество проданных билетов класса А: '))
-#     class_b = int(input('Количество проданных билетов класса Б: '))
-#     class_c = int(input('Количество проданных билетов класса Б: '))
+def main():
+    class_a = int(input('Количество проданных билетов класса А: '))
+    class_b = int(input('Количество проданных билетов класса Б: '))
+    class_c = int(input('Количество проданных билетов класса Б: '))
 
-#     sum_a = calc_a(class_a)
-#     sum_b = calc_b(class_b)
-#     sum_c = calc_c(class_c)
+    sum_a = calc_a(class_a)
+    sum_b = calc_b(class_b)
+    sum_c = calc_c(class_c)
 
-#     total = sum_a + sum_b + sum_c
+    total = sum_a + sum_b + sum_c
 
-#     print(f'Общая сумма дохода состаляет: {total}')
+    print(f'Общая сумма дохода состаляет: {total}')
 
-# def calc_a(class_a):
-#     result = class_a * 20
-#     return result
+def calc_a(class_a):
+    result = class_a * 20
+    return result
     
-# def calc_b(class_b):
-#     result = class_b * 15
-#     return result
+def calc_b(class_b):
+    result = class_b * 15
+    return result
     
-# def calc_c(class_c):
-#     result = class_c * 10
-#     return result
+def calc_c(class_c):
+    result = class_c * 10
+    return result
 
-# main()
+main()

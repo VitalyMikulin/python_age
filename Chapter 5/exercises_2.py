@@ -122,29 +122,62 @@
 
 #Ex7
 
-def main():
-    class_a = int(input('Количество проданных билетов класса А: '))
-    class_b = int(input('Количество проданных билетов класса Б: '))
-    class_c = int(input('Количество проданных билетов класса Б: '))
+# def main():
+#     class_a = int(input('Количество проданных билетов класса А: '))
+#     class_b = int(input('Количество проданных билетов класса Б: '))
+#     class_c = int(input('Количество проданных билетов класса Б: '))
 
-    sum_a = calc_a(class_a)
-    sum_b = calc_b(class_b)
-    sum_c = calc_c(class_c)
+#     sum_a = calc_a(class_a)
+#     sum_b = calc_b(class_b)
+#     sum_c = calc_c(class_c)
 
-    total = sum_a + sum_b + sum_c
+#     total = sum_a + sum_b + sum_c
 
-    print(f'Общая сумма дохода состаляет: {total}')
+#     print(f'Общая сумма дохода составляет: {total}')
 
-def calc_a(class_a):
-    result = class_a * 20
-    return result
+# def calc_a(class_a):
+#     result = class_a * 20
+#     return result
     
-def calc_b(class_b):
-    result = class_b * 15
-    return result
+# def calc_b(class_b):
+#     result = class_b * 15
+#     return result
     
-def calc_c(class_c):
-    result = class_c * 10
-    return result
+# def calc_c(class_c):
+#     result = class_c * 10
+#     return result
 
-main()
+# main()
+
+#Ex8
+
+# def main():
+#     square = float(input('Введите площадь работ в квадратных метрах: '))
+#     paint_price = float(input('Введите цену 5 литровой ёмкости краски: '))
+
+#     paint_tank_qnty = paint_qnty(square)
+#     work_hours_qnty = hours_qnty(square)
+#     total_paint_price = paint_tank_qnty * paint_price
+#     total_work_price = work_hours_qnty * 2000
+#     overall_price = total_paint_price + total_work_price
+
+#     print(f'Количество требуемых ёмкостей по 5л: {paint_tank_qnty}')
+#     print(f'Количество требуемых рабочих часов: {work_hours_qnty}')
+#     print(f'Общая стоимость краски: {total_paint_price}')
+#     print(f'Общая стоимость работы: {total_work_price} рублей')
+#     print(f'Общие затраты на всё: {overall_price}')
+
+
+# def paint_qnty(square):
+#     qnty = square / 10
+#     if qnty < 1:
+#         qnty = 1
+#     else:
+#         qnty = qnty
+#     return qnty
+
+# def hours_qnty(square):
+#     h_qnty = square * 0.8
+#     return h_qnty
+
+# main()

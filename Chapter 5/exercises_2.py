@@ -181,3 +181,25 @@
 #     return h_qnty
 
 # main()
+
+
+#Ex9
+
+def main():
+    profit = float(input('Введите объём продаж: '))
+    federal_tx = fed_tax(profit)
+    municipal_tx = mun_tax(profit)
+    total = federal_tx + municipal_tx
+    print(f'Федеральный налог с продаж составляет:{federal_tx:.2f}')
+    print(f'Муниципальный налог с продаж составляет:{municipal_tx:.2f}')
+    print(f'Общий налог с продаж составляет:{total:.2f}')
+
+def fed_tax(summ):
+    result = summ * 0.05
+    return result
+
+def mun_tax(summ):
+    result = summ * 0.025
+    return result
+
+main()

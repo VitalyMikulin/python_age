@@ -185,21 +185,38 @@
 
 #Ex9
 
-def main():
-    profit = float(input('Введите объём продаж: '))
-    federal_tx = fed_tax(profit)
-    municipal_tx = mun_tax(profit)
-    total = federal_tx + municipal_tx
-    print(f'Федеральный налог с продаж составляет:{federal_tx:.2f}')
-    print(f'Муниципальный налог с продаж составляет:{municipal_tx:.2f}')
-    print(f'Общий налог с продаж составляет:{total:.2f}')
+# def main():
+#     profit = float(input('Введите объём продаж: '))
+#     federal_tx = fed_tax(profit)
+#     municipal_tx = mun_tax(profit)
+#     total = federal_tx + municipal_tx
+#     print(f'Федеральный налог с продаж составляет:{federal_tx:.2f}')
+#     print(f'Муниципальный налог с продаж составляет:{municipal_tx:.2f}')
+#     print(f'Общий налог с продаж составляет:{total:.2f}')
 
-def fed_tax(summ):
-    result = summ * 0.05
-    return result
+# def fed_tax(summ):
+#     result = summ * 0.05
+#     return result
 
-def mun_tax(summ):
-    result = summ * 0.025
-    return result
+# def mun_tax(summ):
+#     result = summ * 0.025
+#     return result
 
-main()
+# main()
+
+#Ex10
+
+# def main():
+#     feet_qty = int(input('Введите количество футов: '))
+#     total_inches = feet_to_inches(feet_qty)
+#     print(f'{feet_qty} футов - это {total_inches} дюймов')
+
+# def feet_to_inches(feets):
+#     result = feets * 12
+#     return result
+
+# main()
+
+#Ex11
+
+import random

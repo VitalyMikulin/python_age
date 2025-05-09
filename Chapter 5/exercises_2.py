@@ -220,3 +220,20 @@
 #Ex11
 
 import random
+
+answer = 'да'
+def main():
+    first = random.randint(1, 99)
+    second = random.randint(1, 99)
+    summ = first + second
+    print('\n', first,'\n+\n', second, '\n', sep='')
+    userSumm = int(input('Введите ответ: '))
+    if userSumm == summ:
+        print('\nПоздравляю!\nЭто правильный ответ!\n')
+    else:
+        print('\nК сожалению ты ошибся:(')
+        print(f'Правильный ответ {summ}\n')
+
+while (answer == 'да' or answer == 'Да'):
+    main()
+    answer = input('Если хочешь другой пример, введи "Да": ')

@@ -222,6 +222,7 @@
 import random
 
 answer = 'да'
+print('\n\nПривет, мой друг! Это математический тренажёр, давай приступим!')
 def main():
     first = random.randint(1, 99)
     second = random.randint(1, 99)

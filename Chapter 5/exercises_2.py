@@ -219,22 +219,43 @@
 
 #Ex11
 
-import random
+# import random
 
-answer = 'да'
-print('\n\nПривет, мой друг! Это математический тренажёр, давай приступим!')
-def main():
-    first = random.randint(1, 99)
-    second = random.randint(1, 99)
-    summ = first + second
-    print('\n', first,'\n+\n', second, '\n', sep='')
-    userSumm = int(input('Введите ответ: '))
-    if userSumm == summ:
-        print('\nПоздравляю!\nЭто правильный ответ!\n')
-    else:
-        print('\nК сожалению ты ошибся:(')
-        print(f'Правильный ответ {summ}\n')
+# answer = 'да'
+# print('\n\nПривет, мой друг! Это математический тренажёр, давай приступим!')
+# def main():
+#     first = random.randint(1, 40)
+#     second = random.randint(1, 40)
+#     summ = first + second
+#     print('\n', first,'\n+\n', second, '\n', sep='')
+#     userSumm = int(input('Введите ответ: '))
+#     if userSumm == summ:
+#         print('\nПоздравляю!\nЭто правильный ответ!\n')
+#     else:
+#         print('\nК сожалению ты ошибся:(')
+#         print(f'Правильный ответ {summ}\n')
 
-while (answer == 'да' or answer == 'Да'):
-    main()
-    answer = input('Если хочешь другой пример, введи "Да": ')
+# while (answer == 'да' or answer == 'Да'):
+#     main()
+#     answer = input('Если хочешь другой пример, введи "Да": ')
+
+#Ex12
+
+# def main():
+#     firstNumber = int(input('Введите первое число: '))
+#     secondNumber = int(input('Введите второе число: '))
+#     if firstNumber == secondNumber:
+#         maxNumber = 'Эти числа равны'
+#         print(maxNumber)
+#     else:
+#         maxNumber = max(firstNumber, secondNumber)
+#         print(f'Максимальное значение: {maxNumber}')
+
+# def max(first, second):
+#     if first > second:
+#         result = first
+#     else:
+#         result = second
+#     return result
+
+main()

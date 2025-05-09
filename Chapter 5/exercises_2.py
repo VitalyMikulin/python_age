@@ -258,4 +258,16 @@
 #         result = second
 #     return result
 
-main()
+# main()
+
+#Ex13
+
+# def main():
+#     for s in range(1, 11):
+#         print(f'За {s} секунд, тело пролетит {falling_distance(s):.2f} метров')
+
+# def falling_distance(seconds):
+#     result = (9.8 * seconds ** 2) / 2
+#     return result
+
+# main()

@@ -271,3 +271,73 @@
 #     return result
 
 # main()
+
+#Ex14
+
+# def main():
+#     speed = float(input('Введите скорость тела в м/c: '))
+#     weight = float(input('Введите массу тела в кг: '))
+#     print(f'Кинетическая энергия тела составляет {kinetic(speed, weight):.2f}')
+
+# def kinetic(speed, weight):
+#     result = (weight * speed ** 2) / 2
+#     return result
+
+# main()
+
+#Ex15
+
+# def main():
+#     one = int(input('Введите первую оценку: '))
+#     determine_grade(one)
+#     two = int(input('Введите вторую оценку: '))
+#     determine_grade(two)
+#     three = int(input('Введите третью оценку: '))
+#     determine_grade(three)
+#     four = int(input('Введите четвертую оценку: '))
+#     determine_grade(four)  
+#     five = int(input('Введите пятую оценку: '))
+#     determine_grade(five)
+
+#     print(f'Средний балл составляет {calc_average(one, two, three, four, five):.2f}')
+
+# def calc_average(one, two, three, four, five):
+#     result = (one + two + three + four + five) / 5
+#     return result
+
+# def determine_grade(score):
+#     if score >= 90:
+#         print('Уровень оценки A')
+#     elif score >= 80 and score <= 89:
+#         print('Уровень оценки B')
+#     elif score >= 70 and score <= 79:
+#         print('Уровень оценки C')
+#     elif score >= 60 and score <= 69:
+#         print('Уровень оценки D')
+#     else:
+#         print('Уровень оценки F')
+
+# main()
+
+#Ex16
+
+# import random
+
+# even = 0
+# not_even = 0
+
+# def random_number():
+#     result = random.randint(1, 300)
+#     return result
+
+# for n in range(1, 101):
+#     d = random_number()
+#     print(d, end=', ')
+#     if d % 2 == 0:
+#         even += 1
+#     else:
+#         not_even += 1
+
+# print(f'\nЧётных {even}')
+# print(f'Нечётных {not_even}')
+

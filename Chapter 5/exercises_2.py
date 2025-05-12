@@ -341,3 +341,24 @@
 # print(f'\nЧётных {even}')
 # print(f'Нечётных {not_even}')
 
+# Ex17, Ex18
+
+
+def is_prime(user_number):
+    if user_number == 3 or user_number == 5 or user_number == 7:
+        return True
+    for n in range(2, user_number):
+        b = user_number % n
+        if b == 0 or (user_number % 3) == 0 or (user_number % 5) == 0 or (user_number % 7) == 0:
+            return False
+        else:
+            return True
+
+
+for f in range (3, 1000):
+    g = is_prime(f)
+
+    if g == True:
+        print(f)
+    else:
+        None

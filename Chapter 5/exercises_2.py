@@ -344,21 +344,36 @@
 # Ex17, Ex18
 
 
-def is_prime(user_number):
-    if user_number == 3 or user_number == 5 or user_number == 7:
-        return True
-    for n in range(2, user_number):
-        b = user_number % n
-        if b == 0 or (user_number % 3) == 0 or (user_number % 5) == 0 or (user_number % 7) == 0:
-            return False
-        else:
-            return True
+# def is_prime(user_number):
+#     if user_number == 3 or user_number == 5 or user_number == 7:
+#         return True
+#     for n in range(2, user_number):
+#         b = user_number % n
+#         if b == 0 or (user_number % 3) == 0 or (user_number % 5) == 0 or (user_number % 7) == 0:
+#             return False
+#         else:
+#             return True
 
 
-for f in range (3, 1000):
-    g = is_prime(f)
+# for f in range (3, 1000):
+#     g = is_prime(f)
 
-    if g == True:
-        print(f)
-    else:
-        None
+#     if g == True:
+#         print(f)
+#     else:
+#         None
+
+#Ex19
+
+# def main():
+#     p = float(input('Введите текущую сумму на счёте в рублях: '))
+#     i = float(input('Введите ежемесячную процентную ставку: '))
+#     t = int(input('Введите срок хранения в месяцах: '))
+#     final_summ = f_summ(p, i, t)
+#     print(f'Финальная сумма составляет {final_summ:.2f}')
+
+# def f_summ(p, i, t):
+#     result = p * ((1 + i) ** t)
+#     return result
+
+# main()

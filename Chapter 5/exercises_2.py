@@ -377,3 +377,32 @@
 #     return result
 
 # main()
+
+#Ex20
+
+import random
+
+g = random.randint(1, 100)
+print('\nЯ загадал число от 1 до 100, попробуйте угадать его.\n')
+u = int(input('Введите вашу версию: '))
+p = 0
+
+def whatanumber(number, user):    
+    if number > user:
+        print('\nВаше число МЕНЬШЕ моего, сделайте еще попытку!\n')
+        user = int(input('Введите вашу версию: '))
+        return user
+    elif number < user:
+        print('\nВаше число БОЛЬШЕ моего моего, сделайте еще попытку!\n')
+        user = int(input('Введите вашу версию: '))
+        return user
+           
+
+
+while g != u:
+    p += 1
+    u = whatanumber(g, u)
+    if g == u:
+        p += 1
+        print('\nУРА!\n')
+        print(f'Вы сделали это за {p} попыток')

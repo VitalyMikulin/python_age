@@ -382,27 +382,82 @@
 
 import random
 
-g = random.randint(1, 100)
-print('\nЯ загадал число от 1 до 100, попробуйте угадать его.\n')
-u = int(input('Введите вашу версию: '))
-p = 0
+# g = random.randint(1, 100)
+# print('\nЯ загадал число от 1 до 100, попробуйте угадать его.\n')
+# u = int(input('Введите вашу версию: '))
+# p = 0
 
-def whatanumber(number, user):    
-    if number > user:
-        print('\nВаше число МЕНЬШЕ моего, сделайте еще попытку!\n')
-        user = int(input('Введите вашу версию: '))
-        return user
-    elif number < user:
-        print('\nВаше число БОЛЬШЕ моего моего, сделайте еще попытку!\n')
-        user = int(input('Введите вашу версию: '))
-        return user
+# def whatanumber(number, user):    
+#     if number > user:
+#         print('\nБОЛЬШЕ\n')
+#         user = int(input('Введите вашу версию: '))
+#         return user
+#     elif number < user:
+#         print('\nМЕНЬШЕ\n')
+#         user = int(input('Введите вашу версию: '))
+#         return user
            
+# while g != u:
+#     p += 1
+#     u = whatanumber(g, u)
+#     if g == u:
+#         p += 1
+#         print('\nУРА!\n')
+#         print(f'Вы сделали это за {p} попыток')
+
+# Ex21
+
+# print('\nПоиграем в игру "Камень, ножницы, бумага!"')
+
+# repeat = 1
+
+# def u_choice():
+#     print("""
+#     Выбери свой вариант:\n
+#     '1' - камень
+#     '2' - ножницы
+#     '3' - бумага
+#        """)
+#     usr_choice = int(input('\nТвой вариант: '))
+#     return usr_choice
+
+# def game(comp_c, user_c):
+#     if comp_c == 1 and user_c == 2:
+#         print('\nУ тебя ножницы, у компьютера камень. Он выиграл!')
+#         return False
+#     elif comp_c == 2 and user_c == 1:
+#         print('\nУ тебя камень, у компьютера ножницы. Ты выиграл!')
+#         return True
+#     elif comp_c == 1 and user_c == 3:
+#         print('\nУ тебя бумага, у компьютера камень. Ты выиграл!')
+#         return True
+#     elif comp_c == 3 and user_c == 1:
+#         print('\nУ тебя камень, у компьютера бумага. Он выиграл!')
+#         return False     
+#     elif comp_c == 3 and user_c == 2:
+#         print('\nУ тебя ножницы, у компьютера бумага. Ты выиграл!')
+#         return True
+#     elif comp_c == 2 and user_c == 3:
+#         print('\nУ тебя бумага, у компьютера ножницы. Он выиграл!')
+#         return False
+#     elif comp_c == user_c:
+#         print('\nВы сделали одинаковый выбор. Нужно повторить.')
+#         return None
+
+# u = 0
+# c = 0
+# while repeat != 0:
+#     comp_choice = 1
+#     user_choice = 1
 
 
-while g != u:
-    p += 1
-    u = whatanumber(g, u)
-    if g == u:
-        p += 1
-        print('\nУРА!\n')
-        print(f'Вы сделали это за {p} попыток')
+#     while comp_choice == user_choice:
+#         comp_choice = random.randint(1, 3)
+
+#         user_choice = u_choice()
+#         s = game(comp_choice, user_choice)
+#         if s == True:
+#             u += 1
+#         elif s == False:
+#             c += 1
+#         print(f'\nСчёт: Компьютер - {c} : Игрок - {u}')
